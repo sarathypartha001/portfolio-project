@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+
+.navbar{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.navbar-links{
+     column-gap: 20px;
+     display: flex;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232C;
+
+}
+
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: #1D232C;
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+
+
+/* side nav bar*/
+.side-navbar{
+    background-color: #1D232C;
+    color: white;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    transition: 2s;
+    
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+    
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+
+.side-navbar-links {
+    margin-bottom: 30px;
+    
+    
+}
+
+
+
+
+
+/* Header session*/
+
+.header{
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    
+}
+
+.header-content{
+    padding-top: 30px;
+    font-size: 17px;
+}
+
+.header-button{
+    background-color: #1D232C;
+    color: white;
+    padding: 8px 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+
+/* service */
+
+
+.service-session1{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.service-session2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+.service-session2 i{
+    color: red;
+}
+
+.service-box1{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.service-box2{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.service-box3{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+/* arrivel session*/
+.arrivel{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+#new-arivel{
+    margin-left:2%;
+    
+}
+
+
+.arrivel-image{
+    position: relative;
+    flex-basis: 20%;
+}
+
+.arrivel-image button{
+    background-color: white;
+    color: #1D232C;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    cursor: pointer;
+}
+
+
+/* mostwanted*/
+
+#most-wanted{
+    margin-left: 2%;
+
+}
+.mostwanted{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.most-image{
+    position: relative;
+    flex-basis: 20%;
+}
+
+.most-image button{
+    background-color: white;
+    color: #1D232C;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    cursor: pointer;
+}
+
+/*news Section*/
+
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+
+.news button{
+    background-color: black;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* footer section*/
+
+footer{
+    background-color: #1D232C;
+    color: white;
+    padding: 30px;
+}
+
+
+
+footer a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+footer a:hover{
+    color: red;
+}
+
+
+/* product section*/
+
+.search-bar{
+    text-align: center;
+    margin: 20px;
+    margin-top: 40px;
+    
+}
+
+.search-bar input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.product-box{
+    flex-basis: 20%;
+    text-align: center;
+    margin: 10px;
+}
+
+/*Contact section*/
+
+.Contact{
+     background-color: #1D232C;
+     color: white;
+     margin: 5%;
+    
+}
+.contact ,h2{
+    padding: 1% 5%;
+}
+
+.contact ,.Contact-box{
+    padding: 1% 5%;
+}
+
+
+.contact-box ,input{
+    padding: 11px;
+    width:75vw;
+    margin-bottom: 10px;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.Contact-box .Message{
+    padding-bottom: 100px;
+    
+}
+
+.Contact-button{
+    background-color: red;
+    color: white;
+    padding: 8px 40px;
+    margin-left: 6%;
+    margin-bottom: 3%;
+    cursor: pointer;
+    border: none;
+    
+}
+
+
+/* media Query*/
+
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display: block;
+        cursor: pointer;
+    }
+    .side-navbar{
+        cursor: pointer;
+    }
+    .navbar-links{
+        display: none;
+        
+    }
+}
+
+@media screen and (max-width:700px){
+    .header-image {
+        display: none;
+       }
+    
+   .service-session1{
+    display: none;
+   }
+
+   .service-session2{
+    flex-direction: column;
+   }
+   .new-arivel{
+    margin-left:3%;
+    
+}
+.most-wanted{
+    margin-left:3%;
+    
+}
+  
+}
+
+
+
+
+
+
+
+

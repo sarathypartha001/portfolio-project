@@ -1,0 +1,25 @@
+<input type="text" onkeyup="check(event)">
+
+<div>
+    <h1>One</h1>
+    <h1>two</h1>
+    <h1>three</h1>
+    <h1>four</h1>
+    <h1>five</h1>
+    <h1>six</h1>
+    <h1>seven</h1>
+</div>
+
+<script>
+  var enteredtext =""
+  var container=document.querySelector("div")
+  var elements=container.querySelectorAll("h1")
+  console.log(elements)
+
+
+  function check(event)
+  {
+     enteredtext= event.target.value toUpperCase()
+  }
+
+</script>

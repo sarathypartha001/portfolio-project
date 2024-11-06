@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ff4757;
+    width: 100%;
+    z-index: 99;
+}
+
+#nav {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: antiquewhite;
+}
+
+.box {
+    color: white;
+    width: 42px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    background-color: #2f3542;
+    top: -5px;
+    right: 0;
+    padding: 3px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#cart-icon {
+    padding-top: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#container {
+    margin-top: 100px;
+    width: 100%;
+    padding: 2rem;
+    width: 100vw;
+}
+
+
+/* cart session */
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    z-index: 100;
+    transition: 1.5s;
+}
+.cart-title{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+.cart-box{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+.cart-img{
+    width: 80px;
+    height: 80px;
+    border-style: solid;
+    border-width: fit-content;
+    border-color: brown;
+    padding: 5px;
+}
+.cart-food-title{
+    margin-bottom: 8px;
+    color: #ff4757;
+}
+.cart-remove{
+    font-size: 20px;
+    color: #ff4757;
+    cursor: pointer;
+}
+.price-box{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin-bottom: 8px;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-amt{
+    margin-left: 50px;
+    color: blue;
+}
+.cart-quantity{
+    width: 2.5vw;
+    border-radius: 2px;
+    font-size: medium;
+    padding: 3px;
+}
+.total{
+    color: black;
+    display: flex;
+    justify-content: right;
+    font-size:larger;
+    font-weight: 600;
+}
+.total-amount{
+    margin-left: 8px;
+}
+#cart-close{
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn-buy{
+    border: none;
+    margin-top: 25px;
+    background-color: #2f3542;
+    color:azure;
+    padding: 10px 20px;
+    font-size: 25px;
+    margin-left: 90px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+.cart-search-bar{
+    padding: 5px;
+    font-size: medium;
+    text-align: left;
+    margin: 20px;
+    width: 20vw;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* Main session */
+
+.search-head{
+    text-align: center;
+    margin: 25px;
+}
+.search-logo{
+    font-size: 25px;
+    cursor: pointer;
+    margin: 10px 10px 0px 15px; 
+}
+.search-bar{
+    padding: 10px;
+    font-size: medium;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 50vw;
+    border-radius: 10px;
+    right: 0;
+    transition: 1s;
+    display: none;
+}
+img {
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    transition: 0.5s;
+    aspect-ratio: 1 / 1;
+}
+
+.shop-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.food-box {
+    margin: 10px;
+    position: relative;
+    flex-basis: 21%;
+    border: 2px solid #ff4757;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pic {
+    overflow: hidden;
+}
+
+.pic:hover img {
+    transform: scale(1.5);
+}
+
+h2.title {
+    margin-left: 1%;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    font-weight: 700;
+    display: inline;
+}
+
+.food-price {
+    font-size: 20px;
+    color: blue;
+}
+
+#add-cart {
+    color: white;
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+    background-color: #2ed573;
+    position: absolute;
+    padding: 12px;
+    font-size: medium;
+    transition: 0.8s;
+}
+
+#add-cart:hover {
+    background-color: #2f3542;
+}
+#Footer{
+    text-align: center;
+    background-color: #2f3542;
+    color: #ff4757;
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 35px;
+}
+.regitration{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+}
+.regitration:hover{
+    text-decoration: underline;
+}
+.Thankyou-line{
+    margin: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    h2.title {
+        text-align: center;
+        font-size: small;
+    }
+
+    #nav {
+        justify-content: space-around;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .food-title {
+        font-size: small;
+    }
+
+    #add-cart {
+        font-size: small;
+        padding: 7px;
+    }
+
+    .food-price {
+        font-size: small;
+    }
+    /* cart session */
+    .cart{
+      width: 270px;    
+    }
+    .cart-img{
+        width: 50px;
+        height: 50px;
+        padding: 2px;
+    }
+    .detail-box{
+        font-size: 13px;
+        margin-left: 8px;
+    }
+    .cart-quantity{
+        width: 8vw;
+        border-radius: 1px;
+        font-size: 13px;
+        padding: 2px;
+    }
+
+    .total{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    #cart-close{
+        font-size: 20px;
+    }
+    .btn-buy{
+        padding: 10px 20px;
+        font-size: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .total-title{
+        font-size: 18px;
+    }
+
+    .search-logo{
+        font-size: large;
+        
+    }
+    .search-bar{
+        width: 50vw;
+        padding: 5px;
+    }
+    #Footer{
+        font-size: medium;
+    }
+}
+
+/* Large Screen Adjustments */
+@media screen and (min-width: 1200px) {
+    .pic img {
+        width: 100%;
+    }
+}

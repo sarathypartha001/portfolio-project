@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+   <!--header-->
+    <header>
+        <div id="nav">
+           <a href="#" class="logo"><ion-icon name="fast-food-outline"></ion-icon>SpiceKart </a>
+            <div class="box">
+              <div class="cart-count">0</div>
+              <ion-icon id="cart-icon" name="cart-outline"></ion-icon>
+            </div>  
+            
+            <div class="cart">
+               <ion-icon name="close" id="cart-close"></ion-icon>   
+
+               <div class="cart-title">Cart Items</div>
+               <div class="cart-content">
+                  <!-- <div class="cart-box" id="search-box">
+                     <img src="images/dosa1.jpg" class="cart-img">
+                     <div class="detail-box">
+                        <div class="cart-food-title" id="search-title">Special Dosai</div>
+                        <div class="price-box">
+                           <div class="cart-price">Rs.80</div>
+                           <div class="cart-amt">Rs.80</div>
+                        </div>
+                         <input type="number" class="cart-quantity">
+                     </div>
+                       <ion-icon name="trash" class="cart-remove"></ion-icon>            
+                  </div> -->
+
+                  <!-- <div class="cart-box" id="search-box">
+                     <img src="images/fishfry.jfif" class="cart-img">
+                     <div class="detail-box">
+                        <div class="cart-food-title" id="search-title">Special Dosai</div>
+                        <div class="price-box">
+                           <div class="cart-price">Rs.80</div>
+                           <div class="cart-amt">Rs.80</div>
+                        </div>
+                         <input type="number" class="cart-quantity">
+                     </div>
+                       <ion-icon name="trash" class="cart-remove"></ion-icon>            
+                  </div> -->
+
+                  
+               </div>
+               <div class="total">
+                  <div class="total-title">Total : </div>
+                  <div class="total-amount">Rs.0.00</div>
+               </div>
+               <button class="btn-buy">Place Order</button>           
+            </div>
+         </div> 
+    </header>
+    <!-- Header end -->   
+    
+      
+     <!-- Main session -->
+      <div id="container">
+         <ion-icon name="search-outline" class="search-logo"></ion-icon>
+         <input type="search" placeholder="Search" name="food" class="search-bar" id="search">
+         <div class="search-head">
+            <h2 class="title">Discover The Best Food</h2>
+         </div>
+        <div class="shop-content">
+            
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/dosa1.jpg" class="food-img">
+                </div>
+                <h2 class="food-title" id="search-title">Special Dosa</h2>
+                <span class="food-price">Rs.80</span>
+                <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/dosa2.jpg" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Plain Dosa</h2>
+                 <span class="food-price">Rs.40</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/parotaimage1.jpg" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Parota</h2>
+                 <span class="food-price">Rs.20</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/parotaimage2.jpg" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">1 set Parota</h2>
+                 <span class="food-price">Rs.40</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/poori1.webp" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Poori 1 Set</h2>
+                 <span class="food-price">Rs.70.70</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/podidosa1.jpg" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">special Podi Dosa</h2>
+                 <span class="food-price">Rs.70.85</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/podidosa2.jpg" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Podi Dosa</h2>
+                 <span class="food-price">Rs.60</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/veechuparota.jpg" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Egg veechuparota</h2>
+                 <span class="food-price">Rs.100</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/veechuparota2.jpg" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">veechuparota</h2>
+                 <span class="food-price">Rs.80</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/nattukoli.jfif" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Nattu Koli Gravey</h2>
+                 <span class="food-price">Rs.130</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/mottongravy1.jfif" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Mutton Gravey</h2>
+                 <span class="food-price">Rs.190</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/fishgravy.jfif" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Pepper Fish Gravey</h2>
+                 <span class="food-price">Rs.250</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/fishgravy2.jfif" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Fish Gravey</h2>
+                 <span class="food-price">Rs.250</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/fishfry.jfif" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Special Fish Fry</h2>
+                 <span class="food-price">Rs. 1600 90</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+            
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/fishfry1.jfif" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Fish Fry</h2>
+                 <span class="food-price">Rs.600</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/chikengravey1.jfif" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Chiken Gravey</h2>
+                 <span class="food-price">Rs.160</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/chikengravy2.jfif" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Pepper Chiken Gravey</h2>
+                 <span class="food-price">Rs.190</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/chikengravy3.jfif" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Chettinadu Chiken Gravey</h2>
+                 <span class="food-price">Rs.250</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/pitzza1.jfif" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Burgur</h2>
+                 <span class="food-price">Rs.400</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+
+            <div class="food-box" id="search-box">
+                <div class="pic">
+                   <img src="images/pitzza.jfif" class="food-img">
+                </div>
+                 <h2 class="food-title" id="search-title">Pitzza</h2>
+                 <span class="food-price">Rs.600</span>
+                 <ion-icon id="add-cart" name="cart-outline"></ion-icon>
+            </div>
+         </div>
+      </div>
+
+      
+    <script src="script.js"></script>
+</body>
+</html>
