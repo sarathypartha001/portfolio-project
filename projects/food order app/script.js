@@ -17,9 +17,16 @@ function loadfood() {
 
 // Validate and change quantity
 function changeQty(event) {
-    if (isNaN(event.target.value) || event.target.value < 1) {
-        event.target.value = 1;  // Set minimum quantity to 1
+    // Get the input value
+    let qty = event.target.value;
+
+    // Check if the input is a valid number and greater than or equal to 1
+    if (isNaN(qty) || qty < 0) {
+        qty = 1;  // Set minimum quantity to 1
     }
+
+    event.target.value = qty;
+
     updateTotal();
 }
 
