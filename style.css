@@ -464,7 +464,10 @@ footer{
 
 
 
-@media screen and (max-width:650px){
+@media screen and (max-width:800px){
+    *{
+        font-size: 25px;
+    }
     .navbar-menu-toggle{
         display: block;
         cursor: pointer;
@@ -490,6 +493,9 @@ footer{
     .Home-image img{
         display: none;
     } 
+    .About-view1{
+        font-size: 20px;
+    }
     
     /* About Session*/
      #About{
@@ -508,6 +514,7 @@ footer{
        font-size: small;
        width: 100%;
    }
+   
 
    /* Contact Session */
    .contact-input-description,
@@ -519,4 +526,81 @@ footer{
    }
   
    
+}
+@media screen and (max-width:480px){
+    .side-navbr-head{
+        font-size: 18px;
+    }
+    .Home-name3,
+    .Home-name2{
+        font-size: 20px;
+    }
+    .icons img{
+        width: 19px;
+        height: 19px;
+    }
+    .home-hire{
+        font-size: 18px;
+    }
+    .Home-name-download a{
+        font-size: 20px;
+    }
+    /* about session */
+    .About-head{
+        font-size: 22px;
+    }
+    .About-view1,
+    .About-view{
+        font-size: 15px;
+    }
+    /* education session */
+    #education-heading{
+        font-size: 22px;
+    }
+    #education-head h2{
+        font-size: 16px;
+    }
+    #open-education,
+    #close-education,
+    #open-educationhsc,
+    #close-educationhsc,
+    #open-educationsslc,
+    #close-educationsslc{
+        font-size: 20px;
+    }
+    .inside-education h2,h4,h3,p{
+        font-size: 13px;
+    }
+    /* skills session */
+    .skills-head{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .skills-name,
+    .skills-input{
+        font-size: 15px;
+    }
+    .skills-icons{
+        width: 19px;
+        height: 19px;
+    }
+    /* projects session */
+    .project-heading{
+        font-size: 22px;
+    }
+    .project-img{
+        width: 140px;
+        height: 140px;
+    }
+    /* about session */
+    .about-me-head{
+        font-size: 22px;
+    }
+    .about-me-innerhead{
+        font-size: 18px;
+    }
+    .about-me-innerhead h4{
+        font-size: 16px;
+    }
+
 }
